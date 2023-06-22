@@ -37,6 +37,11 @@ app.post('/user', (req, res) => {
     res.send('Hello Post Method');
 });
 
+app.post('/user', (req, res) => {
+    console.log(req.body);
+    res.send('Hello Post Method');
+});
+
 app.listen(3000, () => {
     console.log('listening on port 3000');
 });
